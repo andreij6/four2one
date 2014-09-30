@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Poker Pals";
+}
+
+<section id="content" class="col-sm-9">
+    <ng-view></ng-view>
+</section>
+<section id="chat" class="col-sm-3">
+    <div class="container">
+        <div class="send-wrap">
+            <textarea id="message" cols="45" rows="2"></textarea>
+        </div>
+        <input type="button" class="btn btn-primary btn-block" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+        <ul id="discussion">
+
+        </ul>
+    </div>
+
+    
+</section>
+
+@section Scripts{
+    <script src="~/Scripts/defaults/angular.min.js"></script>
+    <script src="~/Scripts/defaults/angular-route.min.js"></script>
+    <script src="~/Scripts/_myApp.js"></script>
+
+    <script src="~/Scripts/Controller/HomeCtrl.js"></script>
+    <script src="~/Scripts/Controller/FeedCtrl.js"></script>
+    <script src="~/Scripts/Controller/FriendsCtrl.js"></script>
+    <script src="~/Scripts/Controller/MailCtrl.js"></script>
+    <script src="~/Scripts/Controller/PicsCtrl.js"></script>
+    <script src="~/Scripts/Controller/StoreCtrl.js"></script>
+    <script src="~/Scripts/Controller/VidsCtrl.js"></script>
+    <script src="~/Scripts/Controller/ForumCtrl.js"></script>
+    <script src="~/Scripts/Controller/StatsCtrl.js"></script>
+    <script src="~/Scripts/Controller/ChallengeCtrl.js"></script>
+    <script src="~/Scripts/Controller/PillsCtrl.js"></script>
+
+    <script src="~/Scripts/Factory/WebAPI.js"></script>
+    <script src="~/Scripts/Factory/Storage.js"></script>
+    
+    <script src="~/Scripts/jquery.signalR-2.1.1.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="~/Scripts/SignalRChat.js"></script>
+}
