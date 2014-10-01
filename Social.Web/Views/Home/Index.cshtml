@@ -7,8 +7,8 @@
 </section>
 <section id="chat" class="col-sm-3">
     <div class="container">
-        <div class="send-wrap">
-            <textarea id="message" cols="45" rows="2"></textarea>
+        <div class="send-wrap form-group">
+            <textarea id="message" class="form-control" rows="2"></textarea>
         </div>
         <input type="button" class="btn btn-primary btn-block" id="sendmessage" value="Send" />
         <input type="hidden" id="displayname" />
@@ -21,7 +21,10 @@
 </section>
 
 @section Scripts{
+    <script src="~/Scripts/defaults/angular-file-upload-shim.min.js"></script>
     <script src="~/Scripts/defaults/angular.min.js"></script>
+    <script src="~/Scripts/defaults/angular-file-upload.min.js"></script>
+
     <script src="~/Scripts/defaults/angular-route.min.js"></script>
     <script src="~/Scripts/_myApp.js"></script>
 
